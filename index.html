@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index.js" defer></script>
+  <title>Chinonso David</title>
+</head>
+
+<body id="body">
+  <!-- NAV -->
+  <nav class="px-6 md:px-36 py-8 flex items-center justify-between relative z-50 font-icognito text-[16px]">
+    <!-- Left: Logo -->
+    <a href="index.html">
+      <img src="img/logo.png" alt="Logo" style="width: 35px" />
+    </a>
+  
+    <!-- Center (Mobile only): Theme toggle -->
+    <div class="absolute left-1/2 transform -translate-x-1/2 md:hidden" id="iconBox">
+      <img id="iconImg" src="img/moon.svg" alt="Theme Toggle" class="w-6 h-6 cursor-pointer" />
+    </div>
+  
+    <!-- Desktop Nav Links -->
+    <ul class="hidden md:flex gap-x-8">
+      <li><a href="index.html" class="hover:text-green-400 transition duration-300 ease-in-out">Home</a></li>
+      <li><a href="about.html" class="hover:text-green-400 transition duration-300 ease-in-out">About</a></li>
+      <li><a href="project.html" class="hover:text-green-400 transition duration-300 ease-in-out">Project</a></li>
+      <li><a href="contact.html" class="hover:text-green-400 transition duration-300 ease-in-out">Contact</a></li>
+    </ul>
+  
+    <!-- Right: Theme toggle (Desktop) + Hamburger (Mobile) -->
+    <div class="flex items-center gap-4">
+      <!-- Desktop theme toggle -->
+      <div class="hidden md:block" id="iconBoxDesktop">
+        <img id="iconImgDesktop" src="img/moon.svg" alt="Theme Toggle" class="w-6 h-6 cursor-pointer" />
+      </div>
+  
+      <!-- Mobile hamburger -->
+      <button id="menuBtn" class="md:hidden focus:outline-none text-2xl">
+        <i id="menuIcon" class="fas fa-bars"></i>
+      </button>
+    </div>
+  
+    <!-- Mobile Slide-in Menu -->
+    <ul id="navLinks"
+        class="fixed top-0 right-0 w-2/3 max-w-sm transform translate-x-full transition-transform duration-300 flex flex-col gap-y-6 px-6 py-6 hidden md:hidden backdrop-blur-md bg-white bg-opacity-10 z-40">
+      
+      <!-- Close Button -->
+      <li class="self-end">
+        <button id="closeMenuBtn" class="text-3xl mt-2">
+          <i class="fas fa-times"></i>
+        </button>
+      </li>
+  
+      <!-- Navigation Links -->
+      <li class="mt-10"><a href="index.html" class="hover:text-green-400">Home</a></li>
+      <li><a href="about.html" class="hover:text-green-400">About</a></li>
+      <li><a href="project.html" class="hover:text-green-400">Project</a></li>
+      <li><a href="contact.html" class="hover:text-green-400">Contact</a></li>
+    </ul>
+  </nav>
+  
+
+
+  <!-- HERO-SECTION -->
+
+  <div class="Hero px-6 md:px-16 mt-[50px] md:mt-[100px] flex flex-col md:flex-row justify-center items-center gap-2 md:gap-10">
+
+    <div class="w-full md:w-[70%] flex flex-col gap-5">
+
+      <h1 class="text-[25px] md:text-[48px]">
+
+        Front-end and back-end developer, tech enthusiast & software
+        innovator."
+      </h1>
+      <p class="text-[#A1A1AA] text-sm/8" style="font-size: 16px">
+        I'm Chinonso David, an experienced front-end and back-end developer
+        <br />
+        passionate about creating impactful software that benefits developers
+        and the world.
+      </p>
+
+
+
+
+   <div class="social">
+  <div class="social-link">
+    <ul class="grid grid-cols-3 gap-x-8 gap-y-4" id="social">
+      <li class="gap-[3px] flex items-center">
+        <a href="https://github.com/Chinonsodavid" class="no-underline">
+          <span class="border-b border-gray-500 w-fit flex items-center gap-[3px]">
+            <i class="fa-brands fa-github"></i>GitHub
+          </span>
+        </a>
+      </li>
+      <li class="gap-[3px] flex items-center">
+        <a href="#" class="no-underline">
+          <span class="border-b border-gray-500 w-fit flex items-center gap-[3px]">
+            <i class="fa-brands fa-linkedin"></i>Linkedin
+          </span>
+        </a>
+      </li>
+      <li class="gap-[3px] flex items-center">
+        <a href="#" class="no-underline">
+          <span class="border-b border-gray-500 w-fit flex items-center gap-[3px]">
+            <i class="fa-brands fa-pinterest"></i>Pinterest
+          </span>
+        </a>
+      </li>
+      <li class="gap-[3px] flex items-center">
+        <a href="#" class="no-underline">
+          <span class="border-b border-gray-500 w-fit flex items-center gap-[3px]">
+            <i class="fa-brands fa-facebook"></i>FaceBook
+          </span>
+        </a>
+      </li>
+      <li class="gap-[3px] flex items-center">
+        <a href="#" class="no-underline">
+          <span class="border-b border-gray-500 w-fit flex items-center gap-[3px]">
+            <i class="fa-brands fa-instagram"></i>Instagram
+          </span>
+        </a>
+      </li>
+      <li class="gap-[3px] flex items-center">
+        <a href="#" class="no-underline">
+          <span class="border-b border-gray-500 w-fit flex items-center gap-[3px]">
+            <i class="fa-brands fa-whatsapp"></i>Whatsapp
+          </span>
+        </a>
+      </li>
+      <!-- <li class="gap-[3px] flex items-center">
+        <a href="#" class="no-underline">
+          <span class="border-b border-gray-500 w-fit flex items-center gap-[3px]">
+            <i class="fa-brands fa-stack-overflow"></i>StackOverflow
+          </span>
+        </a>
+      </li> -->
+    </ul>
+  </div>
+</div>
+
+
+
+    </div>
+    <svg viewBox="0 0 1273 906" fill="none" xmlns="http://www.w3.org/2000/svg"
+      class="lg:w-[450px] w-full h-full pt-[50px]">
+      <g>
+        <path class="path"
+          d="M318.587 315.483V510.936L477.544 431.391V236.949M318.587 315.483L159.63 236.949M318.587 315.483L477.544 236.949M318.587 315.483V509.925L159.63 589.469M318.587 315.483L159.63 237.286L0.673828 315.483M318.587 315.483L159.63 394.016M477.544 236.949L318.587 158.753L159.63 236.949M477.544 236.949V432.402M477.544 236.949L318.587 158.416L477.544 80.2192L636.5 158.416L477.544 236.949ZM159.63 236.949V79.5451M159.63 589.469V394.016M159.63 589.469L0.673828 509.925V315.483M0.673828 315.483L159.63 394.016M159.63 79.5451L318.587 1.34863L477.544 79.5451L318.587 158.079L159.63 79.5451ZM795.457 395.701V237.286M795.457 237.286L636.5 159.09L477.544 237.286M795.457 237.286L636.5 315.82M477.544 237.286V431.728L601.139 491.762M477.544 237.286L636.5 315.82M636.5 315.82V472.887M954.414 668.003V473.561M954.414 473.561L795.457 395.364L636.5 473.561L795.457 552.094M954.414 473.561L795.457 552.094M954.414 473.561V669.014M954.414 473.561L795.457 395.027L954.414 316.831L1113.37 395.027L954.414 473.561ZM795.457 552.094L636.5 473.898L477.544 552.094M795.457 552.094L636.5 630.628M477.544 552.094V746.534L636.5 826.078V630.628M477.544 552.094L636.5 630.628M795.457 709.498V904.949M795.457 709.498L636.5 630.965M795.457 709.498L954.414 630.965M795.457 904.949L954.414 825.404V630.965M795.457 904.949L636.5 825.404V630.965M636.5 630.965L795.457 552.768L954.414 630.965M1113.37 552.431V747.882M1113.37 552.431L954.414 473.898M1113.37 552.431L1272.33 473.898M1113.37 747.882L1272.33 668.34V473.898M1113.37 747.882L954.414 668.34V473.898M954.414 473.898L1113.37 395.701L1272.33 473.898"
+          stroke="url(#paint-linear)" stroke-opacity="0.6" stroke-width="2"></path>
+      </g>
+      <path
+        d="M154 586C154 583.239 156.239 581 159 581V581C161.761 581 164 583.239 164 586V586C164 588.761 161.761 591 159 591V591C156.239 591 154 588.761 154 586V586Z"
+        fill="#27B173"></path>
+      <path
+        d="M154 393C154 390.239 156.239 388 159 388V388C161.761 388 164 390.239 164 393V393C164 395.761 161.761 398 159 398V398C156.239 398 154 395.761 154 393V393Z"
+        fill="#27B173"></path>
+      <path
+        d="M788 551C788 548.239 790.239 546 793 546V546C795.761 546 798 548.239 798 551V551C798 553.761 795.761 556 793 556V556C790.239 556 788 553.761 788 551V551Z"
+        fill="#27B173"></path>
+      <path
+        d="M1108 551C1108 548.239 1110.24 546 1113 546V546C1115.76 546 1118 548.239 1118 551V551C1118 553.761 1115.76 556 1113 556V556C1110.24 556 1108 553.761 1108 551V551Z"
+        fill="#27B173"></path>
+      <path
+        d="M1108 398C1108 395.239 1110.24 393 1113 393V393C1115.76 393 1118 395.239 1118 398V398C1118 400.761 1115.76 403 1113 403V403C1110.24 403 1108 400.761 1108 398V398Z"
+        fill="#27B173"></path>
+      <path
+        d="M788 237C788 234.239 790.239 232 793 232V232C795.761 232 798 234.239 798 237V237C798 239.761 795.761 242 793 242V242C790.239 242 788 239.761 788 237V237Z"
+        fill="#27B173"></path>
+      <defs>
+        <linearGradient id="paint-linear" x1="1272.23" y1="479.474" x2="506.242" y2="-216.277"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#27b173"></stop>
+          <stop offset="0.619553" stop-color="#1a663f"></stop>
+          <stop offset="0.93102" stop-color="#26312d"></stop>
+        </linearGradient>
+        <clipPath>
+          <rect width="1273" height="906" fill="white"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
+
+
+  <!-- FOOTER-SECTION -->
+
+  <div class="footer mt-24 px-4 md:px-36 pt-10 flex flex-col md:flex-row justify-between items-center gap-y-6 text-center md:text-left">
+    <!-- Tech stack section -->
+    <div class="flex flex-col md:flex-row items-center gap-2 md:gap-x-4">
+      <p class="tracking-wide">Built With:</p>
+      <ul class="flex gap-x-4">
+        <li class="flex items-center gap-2">
+          <img width="25px" src="img/html.svg" alt=""> Html
+        </li>
+        <li class="flex items-center gap-2">
+          <img width="25px" src="img/tailwind.svg" alt=""> Tailwind
+        </li>
+        <li class="flex items-center gap-2">
+          <img width="25px" src="img/js.svg" alt=""> Javascript
+        </li>
+      </ul>
+    </div>
+  
+    <!-- Copyright -->
+    <p class="text-sm text-gray-500">
+      &copy; Chinonso David 2025. All rights reserved.
+    </p>
+  </div>
+  
+
+</body>
+
+</html>

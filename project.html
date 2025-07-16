@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" defer></script>
+    <title>Chinonso David</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="px-6 md:px-36 py-8 flex items-center justify-between relative z-50 font-icognito text-[16px]">
+        <!-- Left: Logo -->
+        <a href="index.html">
+          <img src="img/logo.png" alt="Logo" style="width: 35px" />
+        </a>
+      
+        <!-- Center (Mobile only): Theme toggle -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 md:hidden" id="iconBox">
+          <img id="iconImg" src="img/moon.svg" alt="Theme Toggle" class="w-6 h-6 cursor-pointer" />
+        </div>
+      
+        <!-- Desktop Nav Links -->
+        <ul class="hidden md:flex gap-x-8">
+          <li><a href="index.html" class="hover:text-green-400 transition duration-300 ease-in-out">Home</a></li>
+          <li><a href="about.html" class="hover:text-green-400 transition duration-300 ease-in-out">About</a></li>
+          <li><a href="project.html" class="hover:text-green-400 transition duration-300 ease-in-out">Project</a></li>
+          <li><a href="contact.html" class="hover:text-green-400 transition duration-300 ease-in-out">Contact</a></li>
+        </ul>
+      
+        <!-- Right: Theme toggle (Desktop) + Hamburger (Mobile) -->
+        <div class="flex items-center gap-4">
+          <!-- Desktop theme toggle -->
+          <div class="hidden md:block" id="iconBoxDesktop">
+            <img id="iconImgDesktop" src="img/moon.svg" alt="Theme Toggle" class="w-6 h-6 cursor-pointer" />
+          </div>
+      
+          <!-- Mobile hamburger -->
+          <button id="menuBtn" class="md:hidden focus:outline-none text-2xl">
+            <i id="menuIcon" class="fas fa-bars"></i>
+          </button>
+        </div>
+      
+        <!-- Mobile Slide-in Menu -->
+        <ul id="navLinks"
+            class="fixed top-0 right-0 w-2/3 max-w-sm transform translate-x-full transition-transform duration-300 flex flex-col gap-y-6 px-6 py-6 hidden md:hidden backdrop-blur-md bg-white bg-opacity-10 z-40">
+          
+          <!-- Close Button -->
+          <li class="self-end">
+            <button id="closeMenuBtn" class="text-3xl mt-2">
+              <i class="fas fa-times"></i>
+            </button>
+          </li>
+      
+          <!-- Navigation Links -->
+          <li class="mt-10"><a href="index.html" class="hover:text-green-400">Home</a></li>
+          <li><a href="about.html" class="hover:text-green-400">About</a></li>
+          <li><a href="project.html" class="hover:text-green-400">Project</a></li>
+          <li><a href="contact.html" class="hover:text-green-400">Contact</a></li>
+        </ul>
+      </nav>
+
+    <!-- Hero Section -->
+    <div class="Hero px-6 sm:px-12 md:px-24 lg:px-36 mt-[100px] flex flex-col">
+        <div class="w-full lg:w-[70%]">
+            <h1 class="text-[32px] sm:text-[38px] md:text-[42px] lg:text-[45px]">Project</h1>
+            <p class="text-[#A1A1AA] mt-5 text-base sm:text-lg" style="font-size: 18px;">
+                This page features a curated selection of projects that best represent my technical expertise and
+                creative approach. Each one showcases thoughtful design, clean code, and practical problem-solving
+                tailored to real-world needs.
+            </p>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="max-w-6xl mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+                <!-- Project Card -->
+                <!-- Repeat block below for more projects -->
+                <div class="bg-gray-300 rounded-xl p-6 shadow-md w-full max-w-[350px]">
+                    <img src="img/edutech.png" alt="Project One" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-1">Edu-Tech</h3>
+                    <p class="text-sm text-[#A1A1AA] mb-3">EduTech is a clean, responsive learning platform with categorized courses, difficulty levels, and real-time video search.</p>
+                    <div class="flex space-x-2 mb-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-6 h-6" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-6 h-6" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6" />
+                    </div>
+                    <a href="#" class="inline-block px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-black transition">View Project</a>
+                </div>
+                <div class="bg-gray-300 rounded-xl p-6 shadow-md w-full max-w-[350px]">
+                    <img src="img/edutech.png" alt="Project One" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-1">Edu-Tech</h3>
+                    <p class="text-sm text-[#A1A1AA] mb-3">EduTech is a clean, responsive learning platform with categorized courses, difficulty levels, and real-time video search.</p>
+                    <div class="flex space-x-2 mb-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-6 h-6" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-6 h-6" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6" />
+                    </div>
+                    <a href="#" class="inline-block px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-black transition">View Project</a>
+                </div>
+                <div class="bg-gray-300 rounded-xl p-6 shadow-md w-full max-w-[350px]">
+                    <img src="img/edutech.png" alt="Project One" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-1">Edu-Tech</h3>
+                    <p class="text-sm text-[#A1A1AA] mb-3">EduTech is a clean, responsive learning platform with categorized courses, difficulty levels, and real-time video search.</p>
+                    <div class="flex space-x-2 mb-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-6 h-6" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-6 h-6" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6" />
+                    </div>
+                    <a href="#" class="inline-block px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-black transition">View Project</a>
+                </div>
+                <div class="bg-gray-300 rounded-xl p-6 shadow-md w-full max-w-[350px]">
+                    <img src="img/edutech.png" alt="Project One" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-1">Edu-Tech</h3>
+                    <p class="text-sm text-[#A1A1AA] mb-3">EduTech is a clean, responsive learning platform with categorized courses, difficulty levels, and real-time video search.</p>
+                    <div class="flex space-x-2 mb-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-6 h-6" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-6 h-6" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6" />
+                    </div>
+                    <a href="#" class="inline-block px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-black transition">View Project</a>
+                </div>
+                <!-- Duplicate this block as needed for more projects (you already did) -->
+                <!-- Your remaining project cards go here with identical responsive support -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer mt-24 px-6 sm:px-12 md:px-24 lg:px-36 py-16 flex flex-col gap-y-6 lg:flex-row justify-between items-center text-center lg:text-left">
+        <div class="flex flex-col sm:flex-row gap-y-3 gap-x-4 items-center">
+            <p class="tracking-wide">Built With:</p>
+            <ul class="flex flex-wrap gap-4 justify-center">
+                <li class="flex items-center gap-2"><img width="25px" src="img/html.svg" alt="">Html</li>
+                <li class="flex items-center gap-2"><img width="25px" src="img/tailwind.svg" alt="">Tailwind</li>
+                <li class="flex items-center gap-2"><img width="25px" src="img/js.svg" alt="">Javascript</li>
+            </ul>
+        </div>
+        <p class="text-sm text-gray-500">
+            &copy; Chinonso David 2025. All rights reserved.
+        </p>
+    </div>
+</body>
+
+
+</html>
