@@ -22,250 +22,275 @@
     <nav class="px-6 md:px-36 py-8 flex items-center justify-between relative z-50 font-icognito text-[16px]">
         <!-- Left: Logo -->
         <a href="index.html">
-          <img src="img/logo.png" alt="Logo" style="width: 35px" />
+            <img src="img/logo.png" alt="Logo" style="width: 35px" />
         </a>
-      
+
         <!-- Center (Mobile only): Theme toggle -->
         <div class="absolute left-1/2 transform -translate-x-1/2 md:hidden" id="iconBox">
-          <img id="iconImg" src="img/moon.svg" alt="Theme Toggle" class="w-6 h-6 cursor-pointer" />
+            <img id="iconImg" src="img/moon.svg" alt="Theme Toggle" class="w-6 h-6 cursor-pointer" />
         </div>
-      
+
         <!-- Desktop Nav Links -->
         <ul class="hidden md:flex gap-x-8">
-          <li><a href="index.html" class="hover:text-green-400 transition duration-300 ease-in-out">Home</a></li>
-          <li><a href="about.html" class="hover:text-green-400 transition duration-300 ease-in-out">About</a></li>
-          <li><a href="project.html" class="hover:text-green-400 transition duration-300 ease-in-out">Project</a></li>
-          <li><a href="contact.html" class="hover:text-green-400 transition duration-300 ease-in-out">Contact</a></li>
+            <li><a href="index.html" class="hover:text-green-400 transition duration-300 ease-in-out">Home</a></li>
+            <li><a href="about.html" class="hover:text-green-400 transition duration-300 ease-in-out">About</a></li>
+            <li><a href="project.html" class="hover:text-green-400 transition duration-300 ease-in-out">Project</a></li>
+            <li><a href="contact.html" class="hover:text-green-400 transition duration-300 ease-in-out">Contact</a></li>
         </ul>
-      
+
         <!-- Right: Theme toggle (Desktop) + Hamburger (Mobile) -->
         <div class="flex items-center gap-4">
-          <!-- Desktop theme toggle -->
-          <div class="hidden md:block" id="iconBoxDesktop">
-            <img id="iconImgDesktop" src="img/moon.svg" alt="Theme Toggle" class="w-6 h-6 cursor-pointer" />
-          </div>
-      
-          <!-- Mobile hamburger -->
-          <button id="menuBtn" class="md:hidden focus:outline-none text-2xl">
-            <i id="menuIcon" class="fas fa-bars"></i>
-          </button>
+            <!-- Desktop theme toggle -->
+            <div class="hidden md:block" id="iconBoxDesktop">
+                <img id="iconImgDesktop" src="img/moon.svg" alt="Theme Toggle" class="w-6 h-6 cursor-pointer" />
+            </div>
+
+            <!-- Mobile hamburger -->
+            <button id="menuBtn" class="md:hidden focus:outline-none text-2xl">
+                <i id="menuIcon" class="fas fa-bars"></i>
+            </button>
         </div>
-      
+
         <!-- Mobile Slide-in Menu -->
         <ul id="navLinks"
             class="fixed top-0 right-0 w-2/3 max-w-sm transform translate-x-full transition-transform duration-300 flex flex-col gap-y-6 px-6 py-6 hidden md:hidden backdrop-blur-md bg-white bg-opacity-10 z-40">
-          
-          <!-- Close Button -->
-          <li class="self-end">
-            <button id="closeMenuBtn" class="text-3xl mt-2">
-              <i class="fas fa-times"></i>
-            </button>
-          </li>
-      
-          <!-- Navigation Links -->
-          <li class="mt-10"><a href="index.html" class="hover:text-green-400">Home</a></li>
-          <li><a href="about.html" class="hover:text-green-400">About</a></li>
-          <li><a href="project.html" class="hover:text-green-400">Project</a></li>
-          <li><a href="contact.html" class="hover:text-green-400">Contact</a></li>
+
+            <!-- Close Button -->
+            <li class="self-end">
+                <button id="closeMenuBtn" class="text-3xl mt-2">
+                    <i class="fas fa-times"></i>
+                </button>
+            </li>
+
+            <!-- Navigation Links -->
+            <li class="mt-10"><a href="index.html" class="hover:text-green-400">Home</a></li>
+            <li><a href="about.html" class="hover:text-green-400">About</a></li>
+            <li><a href="project.html" class="hover:text-green-400">Project</a></li>
+            <li><a href="contact.html" class="hover:text-green-400">Contact</a></li>
         </ul>
-      </nav>
+    </nav>
 
     <!-- HERO-SECTION -->
-<!-- Hero Section -->
-<div class="Hero px-6 sm:px-12 md:px-24 lg:px-36 mt-[100px] flex flex-col lg:flex-row justify-center items-center gap-x-8">
-    <div>
-        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] text-center lg:text-left leading-relaxed lg:leading-snug mt-6 mb-8 px-4 lg:px-0">
-            I'm Chinonso David, based in Lagos, where I’m shaping the future through innovation.
-          </h1>
-          
-        <p class="text-[#A1A1AA] mt-4 text-base sm:text-lg" style="font-size: 16px;">
-            I’m a passionate and self-motivated software engineer with a strong focus on front-end development and
-            user experience. Currently studying Computer Science at the National Institute of Information Technology
-            (NIIT), I enjoy creating seamless, responsive user interfaces that bring ideas to life. My primary tools
-            include JavaScript, React.js, and java.
+    <!-- Hero Section -->
+    <div
+        class="Hero px-6 sm:px-12 md:px-24 lg:px-36 mt-[100px] flex flex-col lg:flex-row justify-center items-center gap-x-8">
+        <div>
+            <h1
+                class="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] text-center lg:text-left leading-relaxed lg:leading-snug mt-6 mb-8 px-4 lg:px-0">
+                I'm Chinonso David, based in Lagos, where I’m shaping the future through innovation.
+            </h1>
+
+            <p class="text-[#A1A1AA] mt-4 text-base sm:text-lg" style="font-size: 16px;">
+                I’m a passionate and self-motivated software engineer with a strong focus on front-end development and
+                user experience. Currently studying Computer Science at the National Institute of Information Technology
+                (NIIT), I enjoy creating seamless, responsive user interfaces that bring ideas to life. My primary tools
+                include JavaScript, React.js, and java.
+            </p>
+            <p class="text-[#A1A1AA] mt-5 text-base sm:text-lg" style="font-size: 16px;">
+                Driven by curiosity and a growth mindset, I embrace every opportunity to learn—no matter how challenging
+                the environment may be.
+            </p>
+        </div>
+        <img class="rounded-full w-[180px] sm:w-[220px] md:w-[260px] lg:w-auto mt-8 lg:mt-0" src="img/fineboy.jpeg"
+            alt="">
+    </div>
+
+    <!-- Main Content -->
+    <div class="px-6 sm:px-12 md:px-24 lg:px-36 mt-16 w-full lg:w-[60%]">
+        <h1 class="text-[28px] sm:text-[32px] md:text-[35px]">What I'm Currently Hacking on?</h1>
+        <p class="text-[#A1A1AA] text-base mt-5" style="font-size: 16px;">
+            I'm currently working on polishing Palm, my wellness app focused on helping people overcome thumb-sucking
+            habits. I carved out time this week for a focused 2-day sprint dedicated to enhancing its core features and
+            refining the layout. It involved deep design work, debugging, and thoughtful improvements. In the end, I
+            launched a cleaner, more supportive experience that makes it easier for users to track progress and stay
+            motivated.
         </p>
-        <p class="text-[#A1A1AA] mt-5 text-base sm:text-lg" style="font-size: 16px;">
-            Driven by curiosity and a growth mindset, I embrace every opportunity to learn—no matter how challenging
-            the environment may be.
+        <div class="flex flex-col justify-center items-center gap-2">
+            <img src="img/edutech.png" class="mt-5 w-full" alt="">
+            <small class="text-center">an image of what it currently looks like</small>
+        </div>
+
+        <h1 class="text-[28px] sm:text-[32px] md:text-[35px] mt-20">Soft Skills</h1>
+        <p class="text-[#A1A1AA] text-base mt-5" style="font-size: 16px;">
+            Certain skills I've picked along the way that deserves mentioning:
         </p>
-    </div>
-    <img class="rounded-full w-[180px] sm:w-[220px] md:w-[260px] lg:w-auto mt-8 lg:mt-0" src="img/fineboy.jpeg" alt="">
-</div>
-
-<!-- Main Content -->
-<div class="px-6 sm:px-12 md:px-24 lg:px-36 mt-16 w-full lg:w-[60%]">
-    <h1 class="text-[28px] sm:text-[32px] md:text-[35px]">What I'm Currently Hacking on?</h1>
-    <p class="text-[#A1A1AA] text-base mt-5" style="font-size: 16px;">
-        I'm currently working on polishing my EduTech website, but I carved out time this week to enhance its core
-        features and layout. It was a focused 2-day sprint of designing, debugging, and refining. In the end, I
-        launched a cleaner, more engaging learning experience.
-    </p>
-    <div class="flex flex-col justify-center items-center gap-2">
-        <img src="img/edutech.png" class="mt-5 w-full" alt="">
-        <small class="text-center">an image of what it currently looks like</small>
-    </div>
-
-    <h1 class="text-[28px] sm:text-[32px] md:text-[35px] mt-20">Soft Skills</h1>
-    <p class="text-[#A1A1AA] text-base mt-5" style="font-size: 16px;">
-        Certain skills I've picked along the way that deserves mentioning:
-    </p>
-    <ul class="list-disc pl-5">
-        <li>
-            <p class="text-[#A1A1AA] text-base mt-5" style="font-size: 17px;">
-                <span class="text-white text-[18px] font-bold">Attention to details:</span>
-                I take pleasure in creating designs and UIs with careful precision, emphasizing quality over quantity.
-            </p>
-        </li>
-        <li>
-            <p class="text-[#A1A1AA] text-base mt-5" style="font-size: 17px;">
-                <span class="text-white text-[18px] font-bold">Ability to work with little supervision:</span>
-                I understand people are busy and would love to get things done timely, so I do my best in delivering
-                assignments and projects with little supervision, sparing you the need to closely manage/oversee my
-                work.
-            </p>
-        </li>
-        <li>
-            <p class="text-[#A1A1AA] text-base mt-5" style="font-size: 17px;">
-                <span class="text-white text-[18px] font-bold">Continuous search for knowledge:</span>
-                I’m deeply committed to learning and staying updated with evolving technologies. Whether it's
-                mastering a new framework or understanding a better way to solve problems, I’m always seeking to
-                grow and adapt.
-            </p>
-        </li>
-    </ul>
-
-    <h1 class="text-[28px] sm:text-[32px] md:text-[35px] mt-20">Usage</h1>
-    <p class="text-[#A1A1AA] text-base mt-5" style="font-size: 16px;">
-        Tools, technologies and gadgets I use on a daily basis but not limited to.
-    </p>
-
-    <!-- Technologies -->
-    <div>
-        <h2 class="text-[24px] sm:text-[28px] md:text-[30px] mt-10">Technologies</h2>
-        <ul class="tech space-y-3 mt-4">
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/devicon--html5.svg" alt="">
-                <a href="#" class="underline text-purple-600">Html</a> - <span class="text-[#A1A1AA]">HyperText Markup Language</span>
+        <ul class="list-disc pl-5">
+            <li>
+                <p class="text-[#A1A1AA] text-base mt-5" style="font-size: 17px;">
+                    <span class="text-white text-[18px] font-bold">Attention to details:</span>
+                    I take pleasure in creating designs and UIs with careful precision, emphasizing quality over
+                    quantity.
+                </p>
             </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/catppuccin--css.svg" alt="">
-                <a href="#" class="underline text-purple-600">Css</a> - <span class="text-[#A1A1AA]">Cascading Style Sheets</span>
+            <li>
+                <p class="text-[#A1A1AA] text-base mt-5" style="font-size: 17px;">
+                    <span class="text-white text-[18px] font-bold">Ability to work with little supervision:</span>
+                    I understand people are busy and would love to get things done timely, so I do my best in delivering
+                    assignments and projects with little supervision, sparing you the need to closely manage/oversee my
+                    work.
+                </p>
             </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/js.svg" alt="">
-                <a href="#" class="underline text-purple-600">JavaScript</a> - <span class="text-[#A1A1AA]">Programming Language</span>
-            </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/tailwind.svg" alt="">
-                <a href="#" class="underline text-purple-600">Tailwind</a> - <span class="text-[#A1A1AA]">Utility-first CSS Framework</span>
-            </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/logos--react.svg" alt="">
-                <a href="#" class="underline text-purple-600">React.js</a> - <span class="text-[#A1A1AA]">JavaScript Library for UI</span>
-            </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/logos--nodejs-icon-alt.svg" alt="">
-                <a href="#" class="underline text-purple-600">Node.js</a> - <span class="text-[#A1A1AA]">JavaScript Runtime Environment</span>
+            <li>
+                <p class="text-[#A1A1AA] text-base mt-5" style="font-size: 17px;">
+                    <span class="text-white text-[18px] font-bold">Continuous search for knowledge:</span>
+                    I’m deeply committed to learning and staying updated with evolving technologies. Whether it's
+                    mastering a new framework or understanding a better way to solve problems, I’m always seeking to
+                    grow and adapt.
+                </p>
             </li>
         </ul>
-    </div>
 
-    <!-- Tools -->
-    <div>
-        <h2 class="text-[24px] sm:text-[28px] md:text-[30px] mt-10">Tools</h2>
-        <ul class="tech space-y-3 mt-4">
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/material-icon-theme--vscode.svg" alt="">
-                <a href="#" class="underline text-purple-600">Visual Studio Code</a> - <span class="text-[#A1A1AA]">Source-code Editor</span>
-            </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/logos--firefox.svg" alt="">
-                <a href="#" class="underline text-purple-600">Firefox</a> - <span class="text-[#A1A1AA]">Open-source Web Browser</span>
-            </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/logos--chrome.svg" alt="">
-                <a href="#" class="underline text-purple-600">Google Chrome</a> - <span class="text-[#A1A1AA]">Web Browser by Google</span>
-            </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/devicon--postman.svg" alt="">
-                <a href="#" class="underline text-purple-600">Postman</a> - <span class="text-[#A1A1AA]">API Testing Platform</span>
-            </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/devicon--figma.svg" alt="">
-                <a href="#" class="underline text-purple-600">Figma</a> - <span class="text-[#A1A1AA]">Collaborative UI Design Tool</span>
-            </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/material-icon-theme--git.svg" alt="">
-                <a href="#" class="underline text-purple-600">Git Bash</a> - <span class="text-[#A1A1AA]">Git Command Line Tool</span>
-            </li>
-        </ul>
-    </div>
+        <h1 class="text-[28px] sm:text-[32px] md:text-[35px] mt-20">Usage</h1>
+        <p class="text-[#A1A1AA] text-base mt-5" style="font-size: 16px;">
+            Tools, technologies and gadgets I use on a daily basis but not limited to.
+        </p>
 
-    <!-- Platform -->
-    <div>
-        <h2 class="text-[24px] sm:text-[28px] md:text-[30px] mt-10">Platform</h2>
-        <ul class="tech space-y-3 mt-4">
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/skill-icons--github-dark.svg" alt="">
-                <a href="#" class="underline text-purple-600">GitHub</a> - <span class="text-[#A1A1AA]">Code Hosting and Collaboration</span>
-            </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/logos--spotify-icon.svg" alt="">
-                <a href="#" class="underline text-purple-600">Spotify</a> - <span class="text-[#A1A1AA]">Music for Focus and Flow</span>
-            </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/devicon--vercel.svg" alt="">
-                <a href="#" class="underline text-purple-600">Vercel</a> - <span class="text-[#A1A1AA]">Frontend Deployment Platform</span>
-            </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/logos--pinterest.svg" alt="">
-                <a href="#" class="underline text-purple-600">Pinterest</a> - <span class="text-[#A1A1AA]">Inspiration & UI Moodboards</span>
-            </li>
-        </ul>
-    </div>
+        <!-- Technologies -->
+        <div>
+            <h2 class="text-[24px] sm:text-[28px] md:text-[30px] mt-10">Technologies</h2>
+            <ul class="tech space-y-3 mt-4">
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/devicon--html5.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Html</a> - <span class="text-[#A1A1AA]">HyperText
+                        Markup Language</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/catppuccin--css.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Css</a> - <span class="text-[#A1A1AA]">Cascading Style
+                        Sheets</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/js.svg" alt="">
+                    <a href="#" class="underline text-purple-600">JavaScript</a> - <span
+                        class="text-[#A1A1AA]">Programming Language</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/tailwind.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Tailwind</a> - <span
+                        class="text-[#A1A1AA]">Utility-first CSS Framework</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/logos--react.svg" alt="">
+                    <a href="#" class="underline text-purple-600">React.js</a> - <span class="text-[#A1A1AA]">JavaScript
+                        Library for UI</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/logos--nodejs-icon-alt.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Node.js</a> - <span class="text-[#A1A1AA]">JavaScript
+                        Runtime Environment</span>
+                </li>
+            </ul>
+        </div>
 
-    <!-- Hardware -->
-    <div>
-        <h2 class="text-[24px] sm:text-[28px] md:text-[30px] mt-10">Hardware</h2>
-        <ul class="list-disc ml-6 mt-2 space-y-3">
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/simple-icons--dell.svg" alt="">
-                <a href="#" class="underline text-purple-600">Dell Latitude 7470</a> - <span class="text-[#A1A1AA]">Portable Development Machine</span>
-            </li>
-            <li class="flex gap-x-2 text-[16px] items-center">
-                <img width="20px" src="img/material-icon-theme--coffee.svg" alt="">
-                <a href="#" class="underline text-purple-600">Coffee-powered Developer</a> - <span class="text-[#A1A1AA]">Occasionally Overheats</span>
-            </li>
-        </ul>
+        <!-- Tools -->
+        <div>
+            <h2 class="text-[24px] sm:text-[28px] md:text-[30px] mt-10">Tools</h2>
+            <ul class="tech space-y-3 mt-4">
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/material-icon-theme--vscode.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Visual Studio Code</a> - <span
+                        class="text-[#A1A1AA]">Source-code Editor</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/logos--firefox.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Firefox</a> - <span class="text-[#A1A1AA]">Open-source
+                        Web Browser</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/logos--chrome.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Google Chrome</a> - <span class="text-[#A1A1AA]">Web
+                        Browser by Google</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/devicon--postman.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Postman</a> - <span class="text-[#A1A1AA]">API Testing
+                        Platform</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/devicon--figma.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Figma</a> - <span class="text-[#A1A1AA]">Collaborative
+                        UI Design Tool</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/material-icon-theme--git.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Git Bash</a> - <span class="text-[#A1A1AA]">Git
+                        Command Line Tool</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Platform -->
+        <div>
+            <h2 class="text-[24px] sm:text-[28px] md:text-[30px] mt-10">Platform</h2>
+            <ul class="tech space-y-3 mt-4">
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/skill-icons--github-dark.svg" alt="">
+                    <a href="#" class="underline text-purple-600">GitHub</a> - <span class="text-[#A1A1AA]">Code Hosting
+                        and Collaboration</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/logos--spotify-icon.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Spotify</a> - <span class="text-[#A1A1AA]">Music for
+                        Focus and Flow</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/devicon--vercel.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Vercel</a> - <span class="text-[#A1A1AA]">Frontend
+                        Deployment Platform</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/logos--pinterest.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Pinterest</a> - <span
+                        class="text-[#A1A1AA]">Inspiration & UI Moodboards</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Hardware -->
+        <div>
+            <h2 class="text-[24px] sm:text-[28px] md:text-[30px] mt-10">Hardware</h2>
+            <ul class="list-disc ml-6 mt-2 space-y-3">
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/simple-icons--dell.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Dell Latitude 7470</a> - <span
+                        class="text-[#A1A1AA]">Portable Development Machine</span>
+                </li>
+                <li class="flex gap-x-2 text-[16px] items-center">
+                    <img width="20px" src="img/material-icon-theme--coffee.svg" alt="">
+                    <a href="#" class="underline text-purple-600">Coffee-powered Developer</a> - <span
+                        class="text-[#A1A1AA]">Occasionally Overheats</span>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
 
 
 
     <!-- FOOTER-SECTION -->
 
-    <div class="footer mt-24 px-4 md:px-36 py-10 flex flex-col md:flex-row justify-between items-center gap-y-6 text-center md:text-left">
+    <div
+        class="footer mt-24 px-4 md:px-36 py-10 flex flex-col md:flex-row justify-between items-center gap-y-6 text-center md:text-left">
         <!-- Tech stack section -->
         <div class="flex flex-col md:flex-row items-center gap-2 md:gap-x-4">
-          <p class="tracking-wide">Built With:</p>
-          <ul class="flex gap-x-4">
-            <li class="flex items-center gap-2">
-              <img width="25px" src="img/html.svg" alt=""> Html
-            </li>
-            <li class="flex items-center gap-2">
-              <img width="25px" src="img/tailwind.svg" alt=""> Tailwind
-            </li>
-            <li class="flex items-center gap-2">
-              <img width="25px" src="img/js.svg" alt=""> Javascript
-            </li>
-          </ul>
+            <p class="tracking-wide">Built With:</p>
+            <ul class="flex gap-x-4">
+                <li class="flex items-center gap-2">
+                    <img width="25px" src="img/html.svg" alt=""> Html
+                </li>
+                <li class="flex items-center gap-2">
+                    <img width="25px" src="img/tailwind.svg" alt=""> Tailwind
+                </li>
+                <li class="flex items-center gap-2">
+                    <img width="25px" src="img/js.svg" alt=""> Javascript
+                </li>
+            </ul>
         </div>
-      
+
         <!-- Copyright -->
         <p class="text-sm text-gray-500">
-          &copy; Chinonso David 2025. All rights reserved.
+            &copy; Chinonso David 2025. All rights reserved.
         </p>
-      </div>
+    </div>
 </body>
 
 </html>
